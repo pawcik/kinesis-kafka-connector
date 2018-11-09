@@ -56,7 +56,7 @@
 						</goals>
 						<configuration>
 							<artifactSet>
-								<!-- Excluding directories that are available in Kafka to avoid version 
+								<!-- Excluding directories that are available in Kafka to avoid version
 								     									conflict -->
 								<excludes>
 									<exclude>org.apache.kafka:*</exclude>
@@ -64,7 +64,8 @@
 									<exclude>com.fasterxml.jackson.core:*</exclude>
 									<exclude>com.fasterxml.jackson.dataformat:*</exclude>
 									<exclude>com.fasterxml.jackson.dataformat:*</exclude>
-									<exclude>jackson*:jackson-databind:jar:</exclude>
+                  <exclude>jackson*:jackson-databind:jar:</exclude>
+									<exclude>com.google.guava:*</exclude>
 								</excludes>
 							</artifactSet>
 						</configuration>
